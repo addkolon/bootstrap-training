@@ -1,0 +1,29 @@
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: #fefefe;
+$body-color: #111;
+
+$primary: #9c00d9;
+$secondary: red;
+$danger: #ff4136;
+
+
+// Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "vendors/vendors"; 
+
+// Mixins
+@import "abstracts/mixins";
+
+// Components
+//@import "components/signin"; 
+@import "components/left-nav";
+@import "components/top-nav";
+
+// Pages
+@import "pages/signin";  
+@import "pages/dashboard";
