@@ -17,3 +17,19 @@
         transform: translateX(0);
     }
 }
+
+@mixin fromBottom {
+    animation: fromBottomAnimation 1s ease both 0.2s;
+}
+
+@keyframes fromBottomAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}

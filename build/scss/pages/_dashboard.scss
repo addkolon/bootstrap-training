@@ -1,3 +1,80 @@
-main{
-    margin-left: 5rem;
+body {
+    &#dashboard {
+        background-color: #f7f7f7;
+    }
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+.bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: $light-purple;
+
+    &.icon-only {
+        fill: $light;
+    }
+}
+
+.left-area {
+    position: fixed;
+    z-index: 999;
+
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 100vh;
+        height: -webkit-fill-available;
+        max-height: 100vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        background-color: $deep-purple;
+
+        .nav-pills {
+
+            .nav-link {
+                border-radius: 0.5rem;
+                margin: 0.5rem;
+
+                &:hover {
+                    .bi {
+                        fill: $light;
+                    }
+                }
+
+
+                &.active {
+                    color: $primary;
+                    background-color: $light;
+
+                    .bi {
+                        fill: $primary;
+                    }
+                }
+            }
+        }
+
+        .dropdown-menu {
+            z-index: 999;
+        }
+    }
+}
+
+main {
+    margin-left: 4.5rem;
+
+    section {
+        margin-bottom: 4rem;
+    }
+
+    .container-fluid {
+        &.main-area {
+            padding: 3rem {
+                top: 6rem;
+            };
+            
+        }
+    }
 }

@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+//npm
+
+
+// @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css"; 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+
 // Required
 @import "../../node_modules/bootstrap/scss/functions";
 
@@ -5,24 +14,44 @@
 $body-bg: #fefefe;
 $body-color: #111;
 
-$primary: #9c00d9;
-$secondary: red;
+
+$primary: #7052f0;
 $danger: #ff4136;
+
+$light-purple: #717791;
+$deep-orange: #ff7700;
+$deep-purple:  #373b54;
+
+// For a list of Bootstrap variables you can override, look at node_modules\bootstrap\scss\_variables.scss
+
+// These are the defaults, but you can override any values
+$font-family-sans-serif: 'M PLUS Rounded 1c', sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
 
 
 // Required
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
+$headings-margin-bottom:      $spacer / 2;
+$headings-font-family:        null;
+$headings-font-style:         null;
+$headings-font-weight:        600;
+$headings-line-height:        1.2;
+$headings-color:              null;
+
 @import "vendors/vendors"; 
 
 // Mixins
-@import "abstracts/mixins";
+@import "abstracts/mixins"; 
 
 // Components
-//@import "components/signin"; 
+@import "components/signin"; 
 @import "components/left-nav";
 @import "components/top-nav";
+@import "components/card";
 
 // Pages
 @import "pages/signin";  

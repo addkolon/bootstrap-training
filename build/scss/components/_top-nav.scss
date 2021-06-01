@@ -1,0 +1,36 @@
+.navbar {
+    background-color: white;
+    box-shadow: 0 -1px 8px rgba($color: $primary, $alpha: 0.13);
+
+    &.fixed-top {
+        margin-left: 4.5rem;
+        height: 68px;
+
+        .container-fluid {
+            padding-left: 3rem;
+
+            .input-group {
+
+                .input-group-text {
+                    background: transparent;
+                    border: none;
+                }
+
+                input {
+                    border: none;
+                    background: transparent;
+                    min-width: 540px;
+                    border-radius: 0;
+                    border-bottom: 3px solid transparent;
+
+
+                    &:focus {
+                        border: none;
+                        box-shadow: none;
+                        border-bottom: $primary 3px solid;
+                    }
+                }
+            }
+        }
+    }
+}
